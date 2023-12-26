@@ -13,6 +13,7 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+  //Input format:1 2 3 4 5 6 7 9 11 13
   var arr = userInput[0].split(' ').map(Number)
 
   const getPrimeNumbers = function(arr) {
