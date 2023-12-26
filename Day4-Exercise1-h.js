@@ -13,6 +13,9 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+  //Input format:1 2 3 4 5 6
+  //             2
+  //First line contains the array and the second line contains the number of rotations
   var arr = userInput[0].split(' ');
   var rotation = Number(userInput[1]);
 
