@@ -13,6 +13,7 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+    //Input format:level kayak hello pop
     var arr = userInput[0].split(' ');
 
     const getPalindromes = arr => arr.filter(str => {
