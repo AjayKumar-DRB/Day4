@@ -13,6 +13,7 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+  //Input format:this is a demo string
   var arr = userInput[0].toLowerCase().split(' ')
   
   const convertToTitleCaps = (function(str) {
