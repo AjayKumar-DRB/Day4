@@ -14,6 +14,7 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+    //Input format:1 2 3 4 5 6
     var arr = userInput[0].split(" ").map(function (ele){if(Number(ele) % 2 != 0){return ele}}).filter(function (ele){return ele != undefined});
     var printArr = function (i){for(i of arr){console.log(i)}}
     printArr(arr)
