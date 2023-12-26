@@ -13,6 +13,7 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+  //Input format:1 2 3 4 5 6 5 2 7 9 1
   var arr = userInput[0].split(' ');
 
   const removeDuplicates = function(arr) {
