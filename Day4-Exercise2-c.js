@@ -13,6 +13,7 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
+    //Input format:1 2 3 4 5 6
     var arr = userInput[0].split(' ')
 
     const sumOfNumbers = arr => arr.reduce((sum, num) => Number(sum) + Number(num), 0);
